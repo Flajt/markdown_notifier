@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:markdown_notifier/markdown_notifier.dart';
-import 'package:markdown_notifier/ui/InfoButton.dart';
 import 'package:path_provider/path_provider.dart';
 
 Future<void> main() async {
-  final queryLogic =
-      NotificationQueryLogic(url: "https://github.com/Flajt/Demo.md");
+  WidgetsFlutterBinding.ensureInitialized();
+  final queryLogic = NotificationQueryLogic(
+      url:
+          "https://raw.githubusercontent.com/Flajt/markdown_notifier/master/NOTIFICATIONS.md",
+      queryDuration: Duration(minutes: 1));
   final dir = await getTemporaryDirectory();
   await queryLogic.init(dir.path);
   runApp(MyApp(
@@ -50,8 +52,10 @@ class MyHomePage extends StatelessWidget {
     return SizedBox(
         child: Scaffold(
       body: SizedBox(
-          child: InfoButton(
-        notificationQueryLogic: queryLogic,
+          child: Center(
+        child: InfoButton(
+          notificationQueryLogic: queryLogic,
+        ),
       )),
     ));
   }
