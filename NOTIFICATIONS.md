@@ -1,3 +1,16 @@
+**22.02.2023**
+## Something cool with emojis and stuff
+😆 🖥️
+- One
+- Two
+- Three
+
+```dart
+void main(){
+    print("Hello World");
+}
+```
+
 **20.02.2023**
 ## Something very informative here
 And some even more informative sub text here

@@ -13,12 +13,14 @@ class NotificationQueryLogic {
     await requestLogic.init(cachePath);
   }
 
-  Stream<Future<QueryModel>> queryForUpdates() {
+  Stream<QueryModel> queryForUpdates() async* {
     if (requestLogic.cacheLogic == null) {
       throw "You need to call the classes init function first!!";
     }
-    return Stream.periodic(queryDuration, (_) async {
-      return await requestLogic.getMarkdown(url);
-    });
+    while (true) {
+      QueryModel data = await requestLogic.getMarkdown(url);
+      yield data;
+      await Future.delayed(queryDuration);
+    }
   }
 }

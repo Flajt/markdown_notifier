@@ -16,24 +16,16 @@ class InfoButton extends StatelessWidget {
     return StreamBuilder(
       stream: notificationQueryLogic.queryForUpdates(),
       builder: (context, snapshot) {
-        return FutureBuilder(
-            future: snapshot.data,
-            builder: (context, snapshot) {
-              if (snapshot.hasData) {
-                return IconButton(
-                    onPressed: () => snapshot.hasData
-                        ? showDialog(
-                            context: context,
-                            builder: (context) => NotificationDialog(
-                                data: snapshot.data!.markdownData))
-                        : null,
-                    icon: snapshot.data?.hasChanged ?? false
-                        ? const Icon(Icons.notifications_active)
-                        : const Icon(Icons.notifications));
-              } else {
-                return const CircularProgressIndicator.adaptive();
-              }
-            });
+        return IconButton(
+            onPressed: () => snapshot.hasData
+                ? showDialog(
+                    context: context,
+                    builder: (context) =>
+                        NotificationDialog(data: snapshot.data!.markdownData))
+                : null,
+            icon: snapshot.data?.hasChanged ?? false
+                ? const Icon(Icons.notifications_active)
+                : const Icon(Icons.notifications));
       },
     );
   }
