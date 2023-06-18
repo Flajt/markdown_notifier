@@ -1,17 +1,4 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-Provide a simple way to communicate with your users via a Markdown file. Usefull for Changelogs, notifications, urgent information and more.
+Provide a simple way to communicate with your users via a Markdown file. Usefull for changelogs, notifications, urgent information, status updates, development updates and more.
 
 
 ## Features
@@ -28,6 +15,28 @@ Provide a simple way to communicate with your users via a Markdown file. Usefull
 - Add your own Notification markdown file to your repository, name it as you like, I choose `NOTIFICATIONS.md`
 - Add some content to the file, if you want to create sections use a `<br>` tag
 
+## Images
+<br>
+
+<img src="./imgs/1.jpg" alt="lala" width=150/> 
+<br>
+
+If new data has been found this icon will be displayed, it's customizable
+
+<img src="./imgs/2.jpg" alt="lala" width=200/>
+<br>
+
+The dialog showing the notifications in order, just an example, it can look different depending on your styling of the Markdown file
+
+<img src="./imgs/3.jpg" alt="lala" width=200/>
+<br>
+
+The Dialog displaying the full notification.
+
+<img src="./imgs/4.jpg" alt="lala" width=150/>
+<br>
+
+If you have viewd all notification the icon looks like this, it's customizable as well
 
 ## Usage
 
@@ -48,7 +57,9 @@ You can also find this in the example folder.
 
 ## Additional information
 
-The package is currently rather bare bones, so if you need something feel free to open an issue and I will implement it, or implement it yourself if you can. The codebase is rather simple, so it should be easy.
+The package is currently rather bare bones, so if you need something feel free to open an issue and I will implement it if it's usefull, or implement it yourself if you can. The codebase is rather simple, so it should be easy to contribute. (If you do open a PR against the dev branch)
 <br>
 
 If you need donation buttons in your app consider checking out my other package here on [pub.dev](https://pub.dev/packages/flutter_donation_buttons)
+<br>
+Also consider donating on the Github page and/or leaving a like / star.
