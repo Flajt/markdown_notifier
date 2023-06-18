@@ -18,22 +18,22 @@ Provide a simple way to communicate with your users via a Markdown file. Usefull
 ## Images
 <br>
 
-<img src="./imgs/1.jpg" alt="Alarm ringing" width=150/> 
+<img src="https://raw.githubusercontent.com/Flajt/markdown_notifier/ec88d55aa9fdea16d23d4dd8db92d93a22eaca99/imgs/1.jpg" alt="Alarm ringing" width=150/> 
 <br>
 
 If new data has been found this icon will be displayed, it's customizable
 
-<img src="./imgs/2.jpg" alt="Dialog with text" width=200/>
+<img src="https://raw.githubusercontent.com/Flajt/markdown_notifier/ec88d55aa9fdea16d23d4dd8db92d93a22eaca99/imgs/2.jpg" alt="Dialog with text" width=200/>
 <br>
 
 The dialog showing the notifications in order, just an example, it can look different depending on your styling of the Markdown file
 
-<img src="./imgs/3.jpg" alt="A text with emojis and code example" width=200/>
+<img src="https://raw.githubusercontent.com/Flajt/markdown_notifier/ec88d55aa9fdea16d23d4dd8db92d93a22eaca99/imgs/3.jpg" alt="A text with emojis and code example" width=200/>
 <br>
 
 The Dialog displaying the full notification.
 
-<img src="./imgs/4.jpg" alt="Alarm not ringing" width=150/>
+<img src="https://raw.githubusercontent.com/Flajt/markdown_notifier/ec88d55aa9fdea16d23d4dd8db92d93a22eaca99/imgs/4.jpg" alt="Alarm not ringing" width=150/>
 <br>
 
 If you have viewed all notification the icon looks like this, it's customizable as well

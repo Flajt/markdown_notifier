@@ -9,12 +9,14 @@ class InfoButton extends StatefulWidget {
   final Icon notificationButtonIcon;
 
   /// Button to display if new notifications are available
-  final Icon hasNotificaionIconButton;
+  final Icon hasNotificationIconButton;
+
+  /// Your instance of [NotificationQueryLogic]
   final NotificationQueryLogic notificationQueryLogic;
   const InfoButton(
       {Key? key,
       this.notificationButtonIcon = const Icon(Icons.notifications),
-      this.hasNotificaionIconButton = const Icon(Icons.notifications_active),
+      this.hasNotificationIconButton = const Icon(Icons.notifications_active),
       required this.notificationQueryLogic})
       : super(key: key);
 
@@ -42,7 +44,7 @@ class _InfoButtonState extends State<InfoButton> {
               }
             },
             icon: NotificationIconLogic.instance.needsNotification
-                ? widget.hasNotificaionIconButton
+                ? widget.hasNotificationIconButton
                 : widget.notificationButtonIcon);
       },
     );

@@ -12,12 +12,15 @@ class NotificationQueryLogic {
     requestLogic = RequestLogic();
     notificationIconLogic = NotificationIconLogic.instance;
   }
+
+  /// Init caches for [RequestLogic] and [NotificationIconLogic] use[cachePath] to provide a path to cache data
   Future<void> init(String cachePath) async {
     await requestLogic.init(cachePath);
     await notificationIconLogic
         .init(cachePath); //TODO: Maybe use different path
   }
 
+  /// Query for updates and yield [QueryModel] if data has changed, this is used by the [InformationButton]
   Stream<QueryModel> queryForUpdates() async* {
     if (requestLogic.cacheLogic == null) {
       throw "You need to call the classes init function first!!";
