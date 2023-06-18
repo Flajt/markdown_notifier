@@ -36,7 +36,7 @@ The Dialog displaying the full notification.
 <img src="./imgs/4.jpg" alt="lala" width=150/>
 <br>
 
-If you have viewd all notification the icon looks like this, it's customizable as well
+If you have viewed all notification the icon looks like this, it's customizable as well
 
 ## Usage
 
@@ -57,7 +57,7 @@ You can also find this in the example folder.
 
 ## Additional information
 
-The package is currently rather bare bones, so if you need something feel free to open an issue and I will implement it if it's usefull, or implement it yourself if you can. The codebase is rather simple, so it should be easy to contribute. (If you do open a PR against the dev branch)
+The package is currently rather bare bones, so if you need something feel free to open an issue and I will implement it if it's usefull, or implement it yourself if you can. The codebase is rather simple, so it should be easy to contribute.
 <br>
 
 If you need donation buttons in your app consider checking out my other package here on [pub.dev](https://pub.dev/packages/flutter_donation_buttons)
