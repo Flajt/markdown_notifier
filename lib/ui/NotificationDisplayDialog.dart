@@ -42,12 +42,10 @@ class NotificationDialog extends StatelessWidget {
                                 padding: const EdgeInsets.all(8.0),
                                 data: notifications[index])));
                   },
-                  child: ListTile(
-                    title: MarkdownWidget(
-                        selectable: false,
-                        data: notifications[index]
-                            .substring(0, _getLength(notifications[index]))),
-                  ),
+                  child: MarkdownWidget(
+                      selectable: false,
+                      data: notifications[index]
+                          .substring(0, _getLength(notifications[index]))),
                 ),
               );
             }),

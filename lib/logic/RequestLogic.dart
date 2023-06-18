@@ -25,7 +25,8 @@ class RequestLogic {
         return QueryModel(QueryStatus.ERROR, data, false);
       }
     } catch (e) {
-      return QueryModel(QueryStatus.NO_CONNECTION, "Error", false);
+      String data = await cacheLogic!.data;
+      return QueryModel(QueryStatus.NO_CONNECTION, data, false);
     }
   }
 }
