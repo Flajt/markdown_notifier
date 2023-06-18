@@ -17,8 +17,10 @@ class RequestLogic {
     try {
       http.Response resp = await http.get(uri);
       if (resp.statusCode >= 200 && resp.statusCode < 300) {
-        await cacheLogic!.save(resp.body);
         bool hasChanged = await cacheLogic!.hasChanged(resp.body);
+        if (hasChanged) {
+          await cacheLogic!.save(resp.body);
+        }
         return QueryModel(QueryStatus.SUCCESS, resp.body, hasChanged);
       } else {
         String data = await cacheLogic!.data;
