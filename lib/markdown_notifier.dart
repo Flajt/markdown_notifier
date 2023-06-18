@@ -1,4 +1,4 @@
 library markdown_notifier;
 
-export "./ui/InfoButton.dart";
-export "./logic/NotificationQueryLogic.dart";
+export 'ui/info_button.dart';
+export 'logic/notification_query_logic.dart';

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:markdown_notifier/logic/NotificationQueryLogic.dart';
-import 'package:markdown_notifier/ui/NotificationDisplayDialog.dart';
+import 'package:markdown_notifier/logic/notification_query_logic.dart';
+import 'package:markdown_notifier/ui/notification_display_dialog.dart';
 
-import '../logic/NotificationIconLogic.dart';
+import '../logic/notification_logic.dart';
 
 class InfoButton extends StatefulWidget {
   /// Button to display if no new notifications are available
@@ -32,7 +32,7 @@ class _InfoButtonState extends State<InfoButton> {
             onPressed: () async {
               if (snapshot.hasData) {
                 await NotificationIconLogic.instance.shouldNotify(false);
-                setState(() {});
+                setState(() {}); //TODO: Check if this is needed
 
                 // ignore: use_build_context_synchronously
                 showDialog(

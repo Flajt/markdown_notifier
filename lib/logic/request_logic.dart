@@ -1,6 +1,6 @@
 import 'package:http/http.dart' as http;
-import 'package:markdown_notifier/models/QueryModel.dart';
-import 'package:markdown_notifier/logic/CacheLogic.dart';
+import 'package:markdown_notifier/models/query_model.dart';
+import 'package:markdown_notifier/logic/cache_logic.dart';
 
 class RequestLogic {
   CacheLogic? cacheLogic;

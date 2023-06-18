@@ -1,6 +1,6 @@
-import 'package:markdown_notifier/logic/NotificationIconLogic.dart';
-import 'package:markdown_notifier/models/QueryModel.dart';
-import 'package:markdown_notifier/logic/RequestLogic.dart';
+import 'package:markdown_notifier/logic/notification_logic.dart';
+import 'package:markdown_notifier/models/query_model.dart';
+import 'package:markdown_notifier/logic/request_logic.dart';
 
 class NotificationQueryLogic {
   final Duration queryDuration;
