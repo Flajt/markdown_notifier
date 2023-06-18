@@ -1,6 +1,6 @@
 name: markdown_notifier
 description: "Inform your users about updates and news via a NOTICE.md file"
-version: 0.0.1
+version: 0.0.2
 homepage: "https://github.com/Flajt/markdown_notifier"
 repository: "https://github.com/Flajt/markdown_notifier"
 issue_tracker: "https://github.com/Flajt/markdown_notifier/issues"
